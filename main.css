@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat";
+  padding: 0;
+  margin: 0;
+  color: sandybrown;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: burlywood;
+  color: #ffffff;
+  padding: 30px 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1500px;
+  background-color: burlywood;
+}
+
+.nick {
+  position: relative;
+  left: 30px;
+  font-family: Montserrat;
+  font-size: 28px;
+  color: white;
+}
+.list {
+  display: flex;
+  gap: 50px;
+  font-size: 18px;
+  margin-left: 800px;
+}
+
+.list a {
+  font-family: "Montserrat";
+  text-decoration: none;
+  font-size: 28px;
+  color: white;
+}
+.about me {
+  background-color: #ffffff;
+}
+
+.about-me-box {
+  display: flex;
+  padding: 100px;
+  gap: 20px;
+}
+.frontender {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.frontender h1 {
+  font-size: 42px;
+  margin-left: 100px;
+}
+.frontender h3 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.contact_button:hover {
+  font-size: 15px;
+}
+
+.contact_button {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-left: 120px;
+  color: white;
+  background-color: sandybrown;
+}
+
+.image {
+  width: 767px;
+}
+
+.section_skills {
+  background-color: transparent;
+}
+
+.section_skills h2 {
+  text-align: center;
+  font-size: 42px;
+  color: sandybrown;
+}
+
+.skill {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100px;
+  margin: 10px;
+  color: white;
+  gap: 20px;
+}
+
+.skill1 {
+  background-color: chocolate;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill2 {
+  background-color: coral;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill3 {
+  background-color: chocolate;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_projects h2 {
+  text-align: center;
+  font-size: 42px;
+}
+
+.projects-1 {
+  font-size: 26px;
+  margin-left: 100px;
+}
+
+.projects-1 h4 {
+  font-size: 26px;
+}
+
+.projects-2 {
+  margin-left: 500px;
+}
+
+.projects-3 {
+  margin-left: 1000px;
+}
+
+.contacts_section {
+  margin-bottom: 30px;
+}
+
+.contacts_section h2 {
+  text-align: center;
+  font-size: 42px;
+}
+.contacts_box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact_box {
+  width: 100px;
+  height: 100px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  background-color: chocolate;
+}
+
+.box2 {
+  background-color: coral;
+}
+
+.box3 {
+  background-color: chocolate;
+}
+
+.contact_box a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: font-size 0.3s;
+}
+
+.contact_box a:hover {
+  font-size: 15px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: burlywood;
+  color: #ffffff;
+  padding: 30px 15px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1500px;
+}
+header .nick,
+header .list a,
+footer .nick,
+footer .list a {
+  position: relative;
+  text-decoration: none;
+}
+
+header .nick::after,
+header .list a::after,
+footer .nick::after,
+footer .list a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+header .nick:hover::after,
+header .list a:hover::after,
+footer .nick:hover::after,
+footer .list a:hover::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 600px) {
+  header .container,
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .list,
+  footer .list {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .about-me-box {
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .frontender h1,
+  .frontender h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .contact_button {
+    margin-left: 0;
+  }
+
+  .skill {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+
+  .projects-1,
+  .projects-2,
+  .projects-3 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .contacts_box {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
